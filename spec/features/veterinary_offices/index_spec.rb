@@ -52,7 +52,7 @@ RSpec.describe 'the veterinary offices index' do
     expect(@vet_office_3.name).to appear_before(@vet_office_2.name)
   end
 
-  it 'has a link to update each veterinary office' do
+  xit 'has a link to update each veterinary office' do
     visit "/veterinary_offices"
 
     within "#veterinary-office-#{@vet_office_1.id}" do
@@ -71,7 +71,7 @@ RSpec.describe 'the veterinary offices index' do
     expect(page).to have_current_path("/veterinary_offices/#{@vet_office_1.id}/edit")
   end
 
-  it 'has a link to delete each veterinary office' do
+  xit 'has a link to delete each veterinary office' do
     visit "/veterinary_offices"
 
     within "#veterinary-office-#{@vet_office_1.id}" do

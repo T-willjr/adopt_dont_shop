@@ -52,7 +52,7 @@ RSpec.describe 'the shelters index' do
     expect(@shelter_3.name).to appear_before(@shelter_2.name)
   end
 
-  it 'has a link to update each shelter' do
+  xit 'has a link to update each shelter' do
     visit "/shelters"
 
     within "#shelter-#{@shelter_1.id}" do
@@ -71,7 +71,7 @@ RSpec.describe 'the shelters index' do
     expect(page).to have_current_path("/shelters/#{@shelter_1.id}/edit")
   end
 
-  it 'has a link to delete each shelter' do
+  xit 'has a link to delete each shelter' do
     visit "/shelters"
 
     within "#shelter-#{@shelter_1.id}" do
